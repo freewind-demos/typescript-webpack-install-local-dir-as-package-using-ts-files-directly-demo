@@ -7,8 +7,5 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true
-  },
-  "files": [
-    "hello.ts"
-  ]
+  }
 }
