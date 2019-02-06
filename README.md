@@ -29,6 +29,7 @@ npm run demo
   1. 该选项要求相应的module被添加到tsconfig中的files或者include里
     - 我觉得应该添加`include: ["./node_modules/~common"]`，但实际上无用
     - 有用的做法是添加成`include: ["../~common"]`，但感觉跟`allowTsInNodeModules`没有关系
+    - 详情参看：<https://github.com/TypeStrong/ts-loader/pull/773/files>
 1. `tsconfig.json`中添加`include: ["../~common"]`
 1. `webpack.config.ts` -> `resolve` -> `extensions: [".ts"]`
 1. 代码中使用`import {hello} from '~common/hello'`
